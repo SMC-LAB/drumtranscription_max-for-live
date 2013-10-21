@@ -31,124 +31,29 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 956.0, 159.0, 60.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"hidden" : 1,
 					"id" : "obj-57",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 956.0, 182.0, 111.0, 18.0 ],
-					"presentation_rect" : [ 963.0, 148.0, 0.0, 0.0 ],
 					"text" : "tempo 137.992177"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-56",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1041.0, 592.0, 74.0, 18.0 ],
-					"presentation_rect" : [ 1047.0, 596.0, 0.0, 0.0 ],
-					"text" : "137.992177"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-55",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1096.0, 530.0, 32.5, 20.0 ],
-					"text" : "* 8."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-54",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.0, 556.0, 67.0, 18.0 ],
-					"text" : "17.249022"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1035.0, 440.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-48",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1061.0, 498.0, 57.0, 20.0 ],
-					"text" : "!/ 60000."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-46",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 9,
-					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
-					"patching_rect" : [ 980.0, 471.0, 127.0, 20.0 ],
-					"text" : "info~ loop"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 856.0, 440.0, 143.0, 20.0 ],
-					"text" : "buffer~ loop drumloop.aif"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 761.0, 440.0, 80.0, 20.0 ],
-					"text" : "groove~ loop"
 				}
 
 			}
@@ -162,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.0, 287.0, 250.0, 60.0 ],
+					"patching_rect" : [ 723.0, 287.0, 251.0, 60.0 ],
 					"text" : "In delayed mode the transcription has a minimum of 1 bar delay in order to keep the transcribed events position aligned within the bar range, but there is no algorithm latency."
 				}
 
@@ -178,20 +83,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 77.0, 146.0, 85.0, 20.0 ],
 					"text" : "prepend open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 155.0, 116.0, 57.0, 18.0 ],
-					"text" : "jongly.aif"
 				}
 
 			}
@@ -318,12 +209,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-29",
-					"linecount" : 2,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.0, 126.0, 195.0, 52.0 ],
-					"text" : "In delayed mode, LDT works in sync with Max Transport",
+					"patching_rect" : [ 723.0, 92.188263, 195.0, 93.0 ],
+					"text" : "In delayed mode, LDT works in sync with Max Transport, this means that the audio stream must be in sync with Max Transport to work properly.",
 					"textjustification" : 1
 				}
 
@@ -1849,11 +1740,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-57", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 164.5, 139.5, 86.5, 139.5 ],
-					"source" : [ "obj-3", 0 ]
+					"hidden" : 1,
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -1924,42 +1814,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 6 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1978,15 +1832,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-190", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -1996,18 +1841,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -2023,14 +1859,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1::obj-29" : [ "pitch hihat", "pitch hh", 0 ],
-			"obj-1::obj-235" : [ "broadcast mode", "broadcast", 1 ],
-			"obj-1::obj-11" : [ "memory (bars)", "memory (bars)", 1 ],
 			"obj-1::obj-84" : [ "hold transcription", "hold", 1 ],
 			"obj-1::obj-13" : [ "pitch kick", "pitch kk", 0 ],
-			"obj-1::obj-28" : [ "pitch snare", "pitch sn", 0 ],
 			"obj-1::obj-143" : [ "delayed (bars)", "delay (bars)", 1 ],
+			"obj-1::obj-28" : [ "pitch snare", "pitch sn", 0 ],
+			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1::obj-235" : [ "broadcast mode", "broadcast", 1 ],
+			"obj-1::obj-29" : [ "pitch hihat", "pitch hh", 0 ],
+			"obj-1::obj-11" : [ "memory (bars)", "memory (bars)", 1 ],
 			"obj-1::obj-34" : [ "transcription method", "method", 0 ]
 		}
 ,
